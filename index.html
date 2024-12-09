@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="justify-content-center align-items-center mx-auto w-50 my-5 shadow">
+        <div class="py-5 container p-5">
+        <h1 class="text-center text-info">Smart Login System</h1>
+        <form>
+            <div class="mb-3 py-1">
+              <input type="text" class="form-control bg-transparent text-white" id="InputName" placeholder="Enter Your Name">
+            </div>
+            <div class="mb-3 py-1">
+              <input type="email" class="form-control bg-transparent text-white" id="InputEmail" placeholder="Enter Your Email">
+              <p id="emailAlert" class="d-none text-warning">This email is already registered.</p>
+            </div>
+            <div class="mb-3 py-1">
+              <input type="password" class="form-control bg-transparent text-white" id="InputPassword" placeholder="Enter Your Password">
+            </div>
+            <button id=btnSignUp type="submit" class="btn btn-outline-info w-100">SignUp</button>
+            <button id="btnLogin" type="submit" class="btn btn-outline-info w-100 d-none">Login</button>
+            <p class="text-center text-white pt-3 d-none" id="NoAccount">Don’t have an account? <a href="" class="signUpLink"> Sign Up</a></p>
+            <p class="text-center text-white pt-3 " id="HaveAccount">You have an account?  <a href="" class="signInLink">Signin</a></p>
+          </form>
+        </div>
+    </div>
+
+
+    <div class="home container d-none justify-content-center align-content-center vh-100" id="home">
+      <div class="navbar position-fixed fixed-top p-3">
+        <div class="container">
+          <a href="">SMART LOGIN</a>
+          <button class="btn" id="logoutBtn">Logout</button>
+        </div>
+      </div>
+
+      <div class="welcome d-flex position-relative justify-content-center align-items-center ">
+        <h1 class="position-absolute  top-50 translate-middle-y" id="welcomeName"> </h1>
+      </div>
+
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
